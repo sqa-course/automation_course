@@ -1,0 +1,50 @@
+header {
+  height: 4rem;
+  border-bottom: 1px  solid #3a3a3a;
+  padding-inline: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.link {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #7a7a7a;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #05336e;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+  transform-origin: right;
+}
+
+.link:hover {
+  color: #05336e;
+}
+
+.active {
+  color: #05336e;
+}
+.link:hover::before, .active::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 1rem;
+}

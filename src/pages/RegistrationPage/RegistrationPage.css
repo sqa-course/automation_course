@@ -1,0 +1,84 @@
+.register {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  max-width: 50%;
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+
+input {
+  width: 100%;
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: 1px solid #05336e;
+  padding-inline: 1rem;
+  font-size: 1.5rem;
+  outline: none;
+  background: none;
+  color: #05336e80;
+}
+
+.invalid {
+  border: 1px lightcoral solid;
+  animation: shake 0.1s ease-in-out 0s 2;
+  box-shadow: 0 0 0.6rem lightcoral;
+}
+
+.formGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  position: relative;
+}
+.formGroup p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: -1.75rem;
+  left: 0;
+  color: lightcoral;
+  font-size: 1.2rem;
+}
+label {
+  font-size: 1.5rem;
+  color: #05336e;
+}
+
+span {
+  color: red;
+}
+
+button[type='submit'] {
+  background: #fff;
+  border-radius: 1rem;
+  border: 1px  solid #05336e;
+  outline: none;
+  color: #05336e;
+}
+
+@keyframes shake {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 0.5rem;
+  }
+  75% {
+    margin-left: -0.5rem;
+  }
+  100% {
+    margin-left: 0;
+  }
+}

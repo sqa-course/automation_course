@@ -1,0 +1,118 @@
+.register {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+form {
+  max-width: 50%;
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 15;
+}
+
+input {
+  width: 100%;
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: 1px solid #05336e;
+  padding-inline: 1rem;
+  font-size: 1.5rem;
+  outline: none;
+  background: none;
+  color: #05336e80;
+  font-weight: bold;
+}
+
+
+.invalid {
+  border: 1px lightcoral solid;
+  animation: shake 0.1s ease-in-out 0s 2;
+  box-shadow: 0 0 0.6rem lightcoral;
+}
+
+.formGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  position: relative;
+}
+.formGroup p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: -1.75rem;
+  left: 0;
+  color: lightcoral;
+  font-size: 1.2rem;
+}
+label {
+  font-size: 1.5rem;
+  color: #05336e;
+  font-weight: bold;
+}
+span {
+  color: red;
+}
+.runningContainer {
+  position: relative;
+  width: 600px;
+  height: 100px;
+}
+.timer {
+  position: absolute;
+  left: 100px;
+  top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #05336e;
+}
+
+button[type='submit'] {
+  background: #fff;
+  border-radius: 1rem;
+  border: 1px  solid #05336e;
+  outline: none;
+  color: #05336e;
+  font-weight: bold;
+}
+
+@keyframes shake {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 0.5rem;
+  }
+  75% {
+    margin-left: -0.5rem;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+.shrek {
+  position: absolute;
+  top: 150px;
+  left: -500px;
+  transform: rotate(90deg);
+  width: 460px;
+  height: 384px;
+  animation: appearShrek 1s normal forwards ease-in-out 0s 1;
+}
+
+@keyframes appearShrek {
+  100% {
+    left: -250px;
+  }
+}
